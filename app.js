@@ -102,6 +102,7 @@ function nextPlayer() {
 };
 
 function reset() {
+    ended = 0;
     activePlayer = 0;
     document.querySelector('#score-0').textContent = '0';
     document.querySelector('#score-1').textContent = '0';
@@ -112,6 +113,7 @@ function reset() {
     document.querySelector('#current-0').textContent = '0';
     document.querySelector('#current-1').textContent = '0';
     document.querySelector('.dice').style.display = 'none';
+    gamePlaying = true;
 }
 
 function resetWinner() {
